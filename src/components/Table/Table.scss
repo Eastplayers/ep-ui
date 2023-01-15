@@ -1,0 +1,71 @@
+.ant-table-wrapper .ant-table-thead > tr > th {
+  background-color: #f3f4fb;
+  color: #777aa9;
+}
+
+.ant-table-wrapper .ant-table-thead > tr > th {
+  border-bottom: none;
+}
+
+.ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  th:last-child {
+  border-start-end-radius: 12px;
+  border-end-end-radius: 12px;
+}
+
+.ant-table-wrapper
+  .ant-table-container
+  table
+  > thead
+  > tr:first-child
+  th:first-child {
+  border-start-start-radius: 12px;
+  border-end-start-radius: 12px;
+}
+
+.ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > th:not(:last-child):not(.ant-table-selection-column):not(
+    .ant-table-row-expand-icon-cell
+  ):not([colspan])::before {
+  display: none;
+}
+
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-row:hover > td {
+  background-color: #fafafd;
+}
+
+.ant-table-wrapper
+  .ant-table:not(.ant-table-bordered)
+  .ant-table-tbody
+  > tr.ant-table-row.ant-table-row-selected
+  + tr.ant-table-row
+  > td {
+  border-top-color: rgba($color: #ccd1dd, $alpha: 0.6);
+}
+
+.ant-table-wrapper
+  .ant-table:not(.ant-table-bordered)
+  .ant-table-tbody
+  > tr.ant-table-row.ant-table-row-selected:last-child
+  > td {
+  border-bottom-color: rgba($color: #ccd1dd, $alpha: 0.6);
+}
+
+.ant-table-wrapper .ant-table-tbody > tr:last-child > td {
+  border-bottom: solid 1px rgba($color: #ccd1dd, $alpha: 0.6);
+}
+
+.ant-table-wrapper .ant-table-tbody > tr > td {
+  border-top: solid 1px rgba($color: #ccd1dd, $alpha: 0.6);
+}
+
+// Selected row background
+.ant-table-wrapper .ant-table-tbody > tr.ant-table-row-selected > td {
+  background: white;
+}

@@ -1,0 +1,49 @@
+.sidebar {
+  background-color: var(--gray-100);
+  flex-basis: 285px;
+  height: 100vh;
+
+  .ant-menu,
+  .ant-menu-submenu {
+    background-color: transparent;
+    .ant-menu-item,
+    .ant-menu-submenu {
+      &.ant-menu-item-selected {
+        background-color: white;
+        .ant-menu-title-content,
+        .ant-menu-submenu-title {
+          color: var(--gray-100);
+        }
+
+        svg path {
+          fill: var(--gray-100);
+        }
+      }
+
+      svg path {
+        fill: rgba($color: #f3f4fb, $alpha: 0.8);
+      }
+
+      .ant-menu-title-content {
+        color: var(--gray-60);
+      }
+    }
+  }
+  .ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+    background-color: transparent;
+  }
+
+  .ant-menu:not(.ant-menu-horizontal)
+    .ant-menu-item:not(.ant-menu-item-selected):hover,
+  .ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-submenu-title:hover {
+    background-color: #2b2c2e;
+  }
+
+  .ant-menu-submenu-selected svg path {
+    fill: white !important;
+  }
+
+  .ant-menu-submenu-selected .ant-menu-submenu-title > .ant-menu-title-content {
+    color: white;
+  }
+}

@@ -1,0 +1,22 @@
+.ant-picker-dropdown {
+  .ant-picker-cell {
+    .ant-picker-cell-inner {
+      border-radius: 24px;
+    }
+  }
+}
+
+.date-label {
+  p {
+    color: var(--gray-80);
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .ant-picker {
+    height: 45px;
+  }
+}
+
+.ant-picker-focused {
+  box-shadow: none;
+}

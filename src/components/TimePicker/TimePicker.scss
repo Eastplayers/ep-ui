@@ -1,0 +1,16 @@
+.ant-picker-dropdown {
+  .ant-picker-ranges {
+    align-items: center;
+  }
+  .ant-picker-time-panel-column > li.ant-picker-time-panel-cell-selected {
+    .ant-picker-time-panel-cell-inner {
+      background: var(--gray-100);
+      color: white;
+    }
+  }
+  .ant-picker-time-panel-column > li.ant-picker-time-panel-cell {
+    .ant-picker-time-panel-cell-inner:hover {
+      color: var(--gray-100);
+    }
+  }
+}
