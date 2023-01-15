@@ -1,3 +1,6 @@
+import 'antd/dist/reset.css'
+import './styles/index.scss'
+
 export { default as Icon } from './components/Icon'
 export { default as Input } from './components/Input'
 export { default as Layout } from './components/Layout'

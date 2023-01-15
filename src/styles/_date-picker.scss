@@ -1,0 +1,134 @@
+.ant-picker-dropdown .ant-picker-panel-container {
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.1);
+}
+
+.ant-picker-dropdown .ant-picker-panel-container {
+  border-radius: 16px;
+}
+
+.ant-picker-dropdown .ant-picker-date-panel {
+  width: 375px;
+}
+
+.ant-picker-dropdown .ant-picker-header {
+  border-bottom: none;
+  padding: 12px 24px 0;
+}
+
+.ant-picker-dropdown .ant-picker-date-panel .ant-picker-body {
+  padding: 12px 24px 24px;
+}
+
+.ant-picker-dropdown .ant-picker-cell .ant-picker-cell-inner {
+  border-radius: 100%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--secondary-500);
+  margin: 0 auto;
+}
+
+.ant-picker-dropdown .ant-picker-cell::before {
+  height: 36px;
+}
+
+.ant-picker-dropdown
+  .ant-picker-cell-in-view:is(
+    .ant-picker-dropdown .ant-picker-cell-in-range
+  )::before {
+  background: var(--gray-5);
+}
+
+.ant-picker-dropdown
+  .ant-picker-cell-in-view:is(
+    .ant-picker-dropdown .ant-picker-cell-range-start
+  ):not(.ant-picker-dropdown .ant-picker-cell-range-start-single):not(
+    .ant-picker-dropdown .ant-picker-cell-range-end
+  )
+  .ant-picker-cell-inner {
+  border-radius: 100%;
+}
+
+.ant-picker-dropdown
+  .ant-picker-cell-in-view:is(
+    .ant-picker-dropdown .ant-picker-cell-range-start
+  ):not(.ant-picker-dropdown .ant-picker-cell-range-start-single)::before,
+.ant-picker-dropdown
+  .ant-picker-cell-in-view:is(
+    .ant-picker-dropdown .ant-picker-cell-range-end
+  ):not(.ant-picker-dropdown .ant-picker-cell-range-end-single)::before {
+  background: var(--gray-5);
+}
+
+.ant-picker-dropdown
+  .ant-picker-cell-in-view:is(
+    .ant-picker-dropdown .ant-picker-cell-range-end
+  ):not(.ant-picker-dropdown .ant-picker-cell-range-end-single):not(
+    .ant-picker-dropdown .ant-picker-cell-range-start
+  )
+  .ant-picker-cell-inner {
+  border-radius: 100%;
+}
+
+.ant-picker-dropdown .ant-picker-month-panel {
+  width: 300px;
+
+  .ant-picker-cell-inner {
+    height: 27px;
+    border-radius: 24px;
+    margin: 0 auto;
+  }
+
+  .ant-picker-cell {
+    height: 30px;
+  }
+}
+
+.ant-picker-dropdown .ant-picker-date-panel .ant-picker-content {
+  width: 100%;
+}
+
+.ant-picker-dropdown
+  .ant-picker-cell-in-view:is(.ant-picker-dropdown .ant-picker-cell-today)
+  .ant-picker-cell-inner::before {
+  border-radius: 100%;
+}
+
+.ant-picker-dropdown
+  .ant-picker-cell-in-view:is(
+    .ant-picker-dropdown .ant-picker-cell-range-hover
+  ):not(.ant-picker-dropdown .ant-picker-cell-in-range)::after {
+  height: 36px;
+}
+
+.ant-picker-dropdown
+  .ant-picker-cell-in-view:is(
+    .ant-picker-dropdown .ant-picker-cell-range-hover-end
+  ):not(.ant-picker-dropdown .ant-picker-cell-in-range):not(
+    .ant-picker-dropdown .ant-picker-cell-range-start
+  ):not(.ant-picker-dropdown .ant-picker-cell-range-end)::after {
+  height: 36px;
+  border-start-end-radius: 100%;
+  border-end-end-radius: 100%;
+}
+
+.ant-picker-dropdown
+  .ant-picker-cell-in-view:is(
+    .ant-picker-dropdown .ant-picker-cell-range-hover-start
+  ):not(.ant-picker-dropdown .ant-picker-cell-in-range):not(
+    .ant-picker-dropdown .ant-picker-cell-range-start
+  ):not(.ant-picker-dropdown .ant-picker-cell-range-end)::after,
+.ant-picker-dropdown
+  .ant-picker-cell-in-view:is(
+    .ant-picker-dropdown .ant-picker-cell-range-hover-start
+  ):is(.ant-picker-dropdown .ant-picker-cell-range-start-single)::after {
+  height: 36px;
+  border-start-start-radius: 100%;
+  border-end-start-radius: 100%;
+}

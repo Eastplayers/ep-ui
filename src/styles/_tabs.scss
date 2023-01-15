@@ -1,0 +1,16 @@
+.ant-tabs-top > .ant-tabs-nav::before {
+  border-bottom: 1px solid var(--gray-5);
+}
+
+.ant-tabs .ant-tabs-tab-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray-60);
+}
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}

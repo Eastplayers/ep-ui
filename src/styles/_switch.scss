@@ -1,0 +1,24 @@
+.ant-switch {
+  background-color: #e9ebf4;
+  min-width: 36px;
+}
+
+.ant-switch:hover:not(.ant-switch-disabled) {
+  background-color: #e9ebf4;
+}
+
+.ant-switch.ant-switch-checked {
+  background-color: #e9ebf4;
+}
+
+.ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+  background-color: #e9ebf4;
+}
+
+.ant-switch .ant-switch-handle::before {
+  background-color: var(--gray-40);
+}
+
+.ant-switch.ant-switch-checked .ant-switch-handle::before {
+  background-color: var(--gray-emo-child);
+}

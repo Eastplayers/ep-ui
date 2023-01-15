@@ -1,0 +1,42 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./pagination";
+@import "./tabs";
+@import "./checkbox";
+@import "./button";
+@import "./modal";
+@import "./switch";
+@import "./date-picker";
+
+:root {
+  --primary: #733fe7;
+  --secondary-500: #1f2251;
+  --gray-5: #f3f4fb;
+  --gray-40: #ccd1dd;
+  --gray-60: #969ba8;
+  --gray-80: #475064;
+  --gray-100: #1b1b1c;
+  --error: #ff4343;
+  --gray-emo-child: #777aa9;
+  --bg-100: #e2e4e9;
+  --bg-400: #7f859f;
+  --bg-500: #3c4467;
+  --bg-600: #2d334d;
+}
+
+body {
+  font-feature-settings: "salt" on;
+  font-family: "Inter", sans-serif;
+}
+
+.error {
+  color: var(--error);
+  font-size: 12px;
+}
+
+.ant-btn-primary {
+  background-color: var(--gray-100);
+  font-weight: 700;
+}
