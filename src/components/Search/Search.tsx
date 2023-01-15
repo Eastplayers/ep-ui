@@ -1,8 +1,8 @@
 import { Input } from "antd";
-import { FC } from "react";
+import React, { FC } from "react";
 import { useTranslation } from "react-i18next";
-import colors from "~constants/colors";
-import { Trans } from "~translation";
+import colors from "../../constants/colors";
+import { Trans } from "../../translation";
 import Icon from "../Icon";
 
 interface SearchProps {
@@ -17,7 +17,7 @@ const Search: FC<SearchProps> = ({ placeholder = Trans.search }) => {
     <div>
       <Input
         placeholder={t(placeholder)}
-        suffix={<Icon icon="search" size={24} color={colors.GRAY_60} />}
+        suffix={<Icon icon='search' size={24} color={colors.GRAY_60} />}
       />
     </div>
   );

@@ -3,8 +3,8 @@ import { PickerTimeProps as AntTimePickerProps } from "antd/es/date-picker/gener
 import "antd/es/date-picker/style/index";
 import classNames from "classnames";
 
-import { DatePicker } from "~components";
 import "./TimePicker.scss";
+import DatePicker from "../DatePicker";
 
 interface TimePickerProps extends Omit<AntTimePickerProps<Date>, "picker"> {
   label?: string;
@@ -18,11 +18,11 @@ const TimePicker = React.forwardRef<any, TimePickerProps>((props, ref) => {
     <div
       className={classNames("input-wrapper flex flex-col gap-[6px]", className)}
     >
-      {label && <label className="input-label pl-2">{label}</label>}
+      {label && <label className='input-label pl-2'>{label}</label>}
       <DatePicker
         {...rest}
         className={inputClassName}
-        picker="time"
+        picker='time'
         mode={undefined}
         ref={ref}
       />

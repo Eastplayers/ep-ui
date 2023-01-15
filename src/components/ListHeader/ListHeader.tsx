@@ -1,5 +1,5 @@
 import { Button, Checkbox, Popover } from "antd";
-import { FC, Fragment, ReactNode } from "react";
+import React, { FC, Fragment, ReactNode } from "react";
 import Flex from "../Flex";
 import Icon from "../Icon";
 import Search from "../Search";
@@ -18,23 +18,22 @@ const ListHeader: FC<ListHeaderProps> = ({
   rightActions,
   showSearch,
   showEditColumns,
-  onSearch,
 }) => {
   return (
-    <Flex align="center" justify="between">
+    <Flex align='center' justify='between'>
       {leftActions && (
-        <Flex gap={3} align="center" justify="between">
+        <Flex gap={3} align='center' justify='between'>
           {leftActions.map((action, index) => (
             <Fragment key={`l-${index}`}>{action}</Fragment>
           ))}
         </Flex>
       )}
-      <Flex gap={3} align="center" justify="between">
+      <Flex gap={3} align='center' justify='between'>
         {showEditColumns && (
           <Popover
-            placement="bottom"
+            placement='bottom'
             showArrow={false}
-            trigger="click"
+            trigger='click'
             content={
               <Flex col gap={3}>
                 {/* TODO: Separate to component */}
@@ -42,21 +41,21 @@ const ListHeader: FC<ListHeaderProps> = ({
                 <div>
                   <div>Show all properties</div>
                 </div>
-                <div className="flex flex-col gap-3 max-h-[300px] overflow-y-auto">
+                <div className='flex flex-col gap-3 max-h-[300px] overflow-y-auto'>
                   <Checkbox>Updated at</Checkbox>
                   <Checkbox>Country</Checkbox>
                   <Checkbox>Phone number</Checkbox>
                   <Checkbox>Name</Checkbox>
                   <Checkbox>External ID</Checkbox>
                 </div>
-                <Button type="primary">Select 6</Button>
+                <Button type='primary'>Select 6</Button>
               </Flex>
             }
           >
             <Button
-              size="large"
-              type="text"
-              icon={<Icon className="mr-2" icon="edit" size={24} />}
+              size='large'
+              type='text'
+              icon={<Icon className='mr-2' icon='edit' size={24} />}
             >
               Edit Columns
             </Button>

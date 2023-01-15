@@ -16,8 +16,9 @@ const AntDatePicker = generatePicker<Date>(dateFnsGenerateConfig);
 const DatePicker = React.forwardRef<any, DatePickerProps>((props, ref) => {
   const { label, className, ...rest } = props;
   return (
-    <div className="input-wrapper flex flex-col gap-[6px]">
-      {label && <label className="input-label pl-2">{label}</label>}
+    <div className='input-wrapper flex flex-col gap-[6px]'>
+      {label && <label className='input-label pl-2'>{label}</label>}
+      {/* @ts-ignore */}
       <AntDatePicker
         {...rest}
         className={classNames("input-container", className)}

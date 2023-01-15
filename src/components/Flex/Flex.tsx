@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { FC, ReactNode } from "react";
+import React, { FC, ReactNode } from "react";
 
 interface FlexProps {
   children?: ReactNode;

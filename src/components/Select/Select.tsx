@@ -1,8 +1,8 @@
 import { Select as AntSelect } from "antd";
 import classNames from "classnames";
-import { FC, useMemo } from "react";
+import React, { FC, useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import colors from "~constants/colors";
+import colors from "../../constants/colors";
 import Icon from "../Icon";
 import "./Select.scss";
 
@@ -57,16 +57,16 @@ const Select: FC<SelectProps> = ({
           {label}
         </label>
       )}
-      <div className="input-container">
+      <div className='input-container'>
         <AntSelect
           disabled={disabled}
           className={classNames("w-full", className, { disabled })}
-          suffixIcon={<Icon icon="down-small" color={colors.GRAY_100} />}
+          suffixIcon={<Icon icon='down-small' color={colors.GRAY_100} />}
           options={op}
           {...rest}
         />
       </div>
-      {error && <p className="text-red mt-[6px]">{error}</p>}
+      {error && <p className='text-red mt-[6px]'>{error}</p>}
     </div>
   );
 };

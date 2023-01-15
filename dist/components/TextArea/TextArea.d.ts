@@ -1,4 +1,4 @@
-/// <reference types="react" />
+import React from "react";
 import { TextAreaProps as AntTextAreaProps } from "antd/es/input";
 interface TextAreaProps extends Partial<AntTextAreaProps> {
     label?: string;

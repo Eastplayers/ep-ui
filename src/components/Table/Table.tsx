@@ -1,8 +1,8 @@
 import { Table as AntTable } from "antd";
 import { ColumnsType } from "antd/es/table";
 import { TableRowSelection } from "antd/es/table/interface";
-import { FC } from "react";
-import colors from "~constants/colors";
+import React, { FC } from "react";
+import colors from "../../constants/colors";
 import Icon from "../Icon";
 import "./Table.scss";
 
@@ -81,8 +81,8 @@ const Table: FC<TableProps> = ({
         rowSelection={setSelectedRowKeys && rowSelection}
         pagination={{
           position: ["bottomLeft"],
-          prevIcon: <Icon icon="left" color={colors.GRAY_40} />,
-          nextIcon: <Icon icon="right" color={colors.GRAY_40} />,
+          prevIcon: <Icon icon='left' color={colors.GRAY_40} />,
+          nextIcon: <Icon icon='right' color={colors.GRAY_40} />,
           showSizeChanger: true,
           pageSizeOptions: [10, 20, 30],
         }}

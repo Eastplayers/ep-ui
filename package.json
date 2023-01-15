@@ -27,6 +27,7 @@
     "react": "^16.0.0"
   },
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -51,10 +52,12 @@
     "gh-pages": "^2.2.0",
     "microbundle-crl": "^0.13.10",
     "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.21",
     "prettier": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
+    "tailwindcss": "^3.2.4",
     "typescript": "^3.7.5"
   },
   "files": [
@@ -62,6 +65,11 @@
   ],
   "dependencies": {
     "antd": "^5.1.4",
-    "scss": "^0.2.4"
+    "date-fns": "^2.29.3",
+    "i18next": "22.0.3",
+    "icomoon-react": "^3.0.0",
+    "react-i18next": "^12.1.4",
+    "recoil": "^0.7.6",
+    "sass": "^1.57.1"
   }
 }

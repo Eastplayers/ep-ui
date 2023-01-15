@@ -1,6 +1,6 @@
 import { Modal } from "antd";
-import { FC, ReactNode } from "react";
-import colors from "~constants/colors";
+import React, { FC, ReactNode } from "react";
+import colors from "../../constants/colors";
 import Icon from "../Icon";
 import "./ModalWrapper.scss";
 
@@ -23,7 +23,7 @@ const ModalWrapper: FC<ModalWrapperProps> = ({
       destroyOnClose
       centered
       footer={null}
-      closeIcon={<Icon icon="close" size={24} color={colors.GRAY_60} />}
+      closeIcon={<Icon icon='close' size={24} color={colors.GRAY_60} />}
       onCancel={handleClose}
       {...rest}
     >
